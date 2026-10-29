@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Sravanthi M</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/mavarsravanthi/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:mavarsravanthi@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Sravanthi M 👋</h2>
+        <p>I’m Sravanthi, a Production Support Engineer based in Kansas City, specializing in application support, incident management, and production troubleshooting. I have experience with SQL, Unix/Linux, Python, Node.js, REST APIs, AWS CloudWatch, and ETL monitoring to ensure reliable application performance. I’ve reduced incident resolution time by 35% and streamlined 200+ weekly ServiceNow tickets through effective prioritization and improved runbooks. I’m passionate about system reliability, automation, and cross-functional collaboration to deliver seamless user experiences!</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Experience</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/sravanthi_heashot.png" alt="Sravanthi headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I have strong technical skills in SQL, Unix/Linux, Python, Node.js,
+    REST APIs, AWS CloudWatch, and ETL monitoring. I specialize in
+    application support, incident management, root cause analysis, and
+    production troubleshooting. I am experienced with ServiceNow, Jira,
+    Postman, Git, and GitHub, focusing on resolving production issues,
+    improving system reliability, and ensuring smooth application performance.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>Experience</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/testimony-headshot.webp">
+          <p>Sravanthi M</p>
+          <p>Production Support Engineer.</p>
+        </div>
+
+        <div class="text">
+          "Experienced in application and production support, with expertise in SQL, Unix/Linux, Python, AWS CloudWatch, and ETL monitoring. Skilled in incident management, root cause analysis, and troubleshooting critical production issues to ensure system reliability. Successfully improved incident resolution time by 35% and managed 200+ weekly ServiceNow tickets through effective prioritization, clear documentation, and collaboration with cross-functional teams."
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          I am a dedicated Production Support Engineer with experience in application support, incident management, and production troubleshooting. I have hands-on skills in SQL, Unix/Linux, Python, Node.js, REST APIs, AWS CloudWatch, and ETL monitoring. I enjoy identifying root causes, resolving technical issues, and improving system reliability through effective monitoring and automation. My goal is to keep applications running smoothly while delivering reliable solutions and a better user experience.
+        </div>
+
+        <!--<form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form> -->
+        <form id="contact-form">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message"
+    cols="30" rows="10" required></textarea>
+
+  <button type="submit">Send Message</button>
+  <p id="form-status"></p>
+</form>
+      </div>
+    </section>
+  </main>
+    <script>
+    emailjs.init({
+      publicKey: "ANwAUozpy9Lec4moW"
+    });
+
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      formStatus.textContent = "Sending message...";
+
+      emailjs.sendForm(
+        "service_0hapnsi",
+        "template_0r3tdon",
+        contactForm
+      ).then(
+        function () {
+          formStatus.textContent = "Message sent successfully!";
+          contactForm.reset();
+        },
+       function (error) {
+  formStatus.textContent =
+    "Error: " + (error.text || JSON.stringify(error));
+  console.error("EmailJS error:", error);
+}
+      );
+    });
+  </script>
+</body>
+</html>
